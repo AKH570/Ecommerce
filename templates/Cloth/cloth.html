@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth</title>
+</head>
+<body>
+    <h2>
+        Here are cloths details
+    </h2>
+    {% for cloth in cloths_details %}
+    <h1>
+        Color is {{ cloth.cl }}<br></h1>
+        {{ cloth.br }}<br>
+        {{ cloth.sz }}
+    {% endfor %}
+    <h1>
+        Brand is {{ br }}  
+    </h1>
+    <h1>
+       Size is  {{ sz }}  
+    </h1>
+</body>
+</html>
