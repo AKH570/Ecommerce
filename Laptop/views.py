@@ -4,4 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def laptop_master(request):
-    return HttpResponse ("Welcome to my Laptop Zone")
+    return render (request,'laptop/laptop.html')
