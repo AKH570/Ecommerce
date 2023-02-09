@@ -1,22 +1,14 @@
-<html lang="en">
+
     {% extends 'common_code/base.html' %}
-    {% load static %}
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} Cloths Site {% endblock title %}</title>
-</head>
-<body>
+    
+    {% block title %} Cloths{% endblock title %}
+
     {% block content %} 
-    <h2>
-        Here are cloths details
-    </h2>
-    <h1>
-        Color is {{ cl }}<br>
-        Brand is {{ br }}<br>
-        Size is  {{ sz }}  
-    </h1>
+ 
+       <h1> Here are cloths details </h1> 
+  
+       <h5>Color is {{ cl }} </h5> 
+       <h5>Brand is {{ br }} </h5> 
+       <h5>Size is  {{ sz }} </h5>   
+    
     {% endblock content %}
-</body>
-</html>

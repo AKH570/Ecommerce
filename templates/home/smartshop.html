@@ -1,11 +1,27 @@
+
 {% extends 'common_code/base.html' %}
 {% load static %}
 
-{% block title %} Electronics Accessories {% endblock title %}
+{% block title %} SMARTSHOP {% endblock title %}
 
 {% block content %}
-<h1>Accessories</h1>
+<h1>SMARTSHOP</h1>
 <div class="row">
+	<div class="col-md-4">
+		<figure class="card card-product-grid">
+			<div class="img-wrap"> 
+				
+				<img src="{% static 'images/items/1.jpg' %}">	
+			</div>
+        </figure>
+    </div>
+    <div class="col-md-4">
+        <figure class="card card-product-grid">
+            <div class="img-wrap"> 
+                <img src="{% static 'images/items/2.jpg' %}">
+            </div>
+        </figure>
+    </div>
     <div class="col-md-4">
         <figure class="card card-product-grid">
             <div class="img-wrap"> 
@@ -36,3 +52,4 @@
     </div>
 </div>
 {% endblock content %}
+

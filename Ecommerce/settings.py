@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Cloth',
     'Mobile',
     'Laptop',
+    'smartshop',
 ]
 
 MIDDLEWARE = [
