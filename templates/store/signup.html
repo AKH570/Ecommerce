@@ -1,0 +1,49 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <title>Sign Up</title>
+</head>
+<body>  
+
+            <h1>User SignUp</h1> 
+            <h3>using for loop</h3>
+<div class="container">
+    {{ frm.as_p }}
+    <input type="submit" class="btn btn-primary" value="Submit"> 
+</div>
+          
+          
+       
+<h1>====================================================</h1>
+
+
+<form action="" method="">
+    <div class="container-fluid">
+        <div class="mb-4" >
+            {{ frm.first_name.label }}
+            {{ frm.first_name }}
+          </div>
+          <div class="mb-4" >
+            {{ frm.last_name.label }}
+            {{ frm.last_name }}
+          </div>
+        <div class="mb-4" >
+        {{ frm.email.label }}
+        {{ frm.email }}
+      </div>
+        <div class="mb-3">
+            {{ frm.password.label }}
+            {{ frm.password }}
+        </div>
+      <div class="mb-3 form-check">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div> 
+  </form>
+</body>
+</html>

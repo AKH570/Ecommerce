@@ -1,24 +1,24 @@
-
 {% extends 'common_code/base.html' %}
 {% load static %}
-
-{% block title %} SMARTSHOP {% endblock title %}
+{% block title %}All Product{% endblock title %}
 
 {% block content %}
-<h1>SMARTSHOP</h1>
+<h1>All Products</h1> 
+<p><strong>Table</strong>  of product information, please visit this site :
+<a class="" href="{% url 'product' %}">Product info</a></p>
 <div class="row">
 	<div class="col-md-4">
 		<figure class="card card-product-grid">
 			<div class="img-wrap"> 
 				
-				<img src="{% static 'images/items/1.jpg' %}">	
+				<img src="{% static 'images/items/13.jpg' %}">	
 			</div>
         </figure>
     </div>
     <div class="col-md-4">
         <figure class="card card-product-grid">
             <div class="img-wrap"> 
-                <img src="{% static 'images/items/2.jpg' %}">
+                <img src="{% static 'images/items/9.jpg' %}">
             </div>
         </figure>
     </div>
@@ -32,24 +32,9 @@
     <div class="col-md-4">
         <figure class="card card-product-grid">
             <div class="img-wrap"> 
-                <img src="{% static 'images/items/9.jpg' %}">
-            </div>
-        </figure>
-    </div>
-    <div class="col-md-4">
-        <figure class="card card-product-grid">
-            <div class="img-wrap"> 
-                <img src="{% static 'images/items/5.jpg' %}">
-            </div>
-        </figure>
-    </div>
-    <div class="col-md-4">
-        <figure class="card card-product-grid">
-            <div class="img-wrap"> 
                 <img src="{% static 'images/items/8.jpg' %}">
             </div>
         </figure>
     </div>
 </div>
 {% endblock content %}
-

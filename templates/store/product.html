@@ -1,0 +1,33 @@
+{% extends 'common_code/base.html' %}
+
+{% block title %}Product{% endblock title %}
+
+{% block content %}
+<h1>Class-11</h1> <br>
+
+<table class="table table-striped">
+  <thead class="table-primary">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+      <th scope="col">Descriptions</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider ">
+  {% for d in prod_det %}
+    <tr>
+      <td>{{d.id}}</td>
+      <td>{{d.product_name}}</td>
+      <td>{{d.product_cat}}</td>
+      <td>{{d.quantity}}</td>
+      <td>{{d.price}}</td>
+      <td>{{d.descriptions}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock content %}
+{% include 'common_code/footer.html' %}
