@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'Mobile',
     'Laptop',
     'store',
+    'signup',
+    'registration',
 ]
 
 MIDDLEWARE = [

@@ -4,5 +4,4 @@ from store import views
 urlpatterns = [
     			path('pd/', views.store_det,name='product'), 
                 path('', views.all_products,name='all'), 
-                path('su/', views.signup,name='signup'), 
 ]

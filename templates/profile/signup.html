@@ -1,0 +1,63 @@
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/common/form.css' %}">
+{% endblock css %}
+
+{% block content %}
+  <section class="signup">
+    <div class="container">
+      <div class="signup-content">
+          <div class="signup-form">
+              <h2 class="form-title">Sign up</h2>
+                <table>
+                  <form action="" method="POST">
+                          {% csrf_token %}
+                          <div class="row  mb-3">
+                            <div class="col">
+                                    {{ frm.first_name.label }}
+                                    {{ frm.first_name }}
+                            </div>
+                            <div class="col">
+                                    {{ frm.last_name.label }}
+                                    {{ frm.last_name }}
+                            </div>
+                          </div>
+                          <div class="row  mb-3">
+                            <div class="col">
+                                    {{ frm.email.label }}
+                                    {{ frm.email }}
+                            </div>
+                          </div>
+                          <div class="row  mb-3">
+                            <div class="col">
+                                    {{ frm.password.label }}
+                                    {{ frm.password }}
+                            </div>
+                            <div class="col">
+                                    {{ frm.repassword.label }}
+                                    {{ frm.repassword }}
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col">
+                                    {{ frm.usercode.label }}
+                                    {{ frm.usercode }}
+                            </div>
+                          </div>
+                          <div class="row  mb-3">
+                            <div class="col">
+                                    {{ frm.textbox.label }}
+                                    {{ frm.textbox }}
+                            </div>
+                          </div>
+                     <h6>{{ frm.checkbox }} Agreed with this terms and conditions.</h6>
+                     <div class="form-group form-button">
+                      <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                  </div>
+                </form>
+            </table><br>
+          </div>
+      </div>
+  </div>
+</section> 
+{% endblock content %}

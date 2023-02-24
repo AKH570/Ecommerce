@@ -1,0 +1,16 @@
+{% load static %}
+
+	<link rel="stylesheet" href="{% static 'css/common/regis.css' %}">
+
+ <body>
+    <h4>Registration Form</h4>
+    <form action="" method="POST" novalidate> <!--it will not populate fillup instruction-->
+        {% csrf_token %}
+        {% for i in form %}
+        {{ i.label_tag }}{{ i }}<br><br>
+        {% endfor %}
+        <h1><input type="submit" value="Submit"></h1> 
+    </form>
+ </body>
+        
+        

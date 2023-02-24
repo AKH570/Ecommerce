@@ -22,4 +22,6 @@ urlpatterns = [
     path('lp/',include('Laptop.urls')),
     path('mb/',include('Mobile.urls')),
     path('',include('store.urls')),
+    path('su/',include('signup.urls')),
+    path('regi/',include('registration.urls')),
 ]
